@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+    /* padding-top: 50px; */
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+	/* background-color: rgb(231, 231, 231); */
+    background-repeat: no-repeat;
+    padding-left: 200px;
+     background-color: hwb(40 29% 70%); 
+	 /* background-image: url('https://w0.peakpx.com/wallpaper/165/854/HD-wallpaper-3d-watch-3d-accessoire-hand-watch-watch.jpg');  */
+    /* background-position-x: left; */
+
+	background-position-y:bottom;
+    background-clip: border-box;
+	 background-size: cover; 
+      /* background-image: url('https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/c_pad,f_auto,dpr_2.0,h_288,q_auto,w_288/kcxr7p7przzhpsfqfupf.gif');  */ 
+	 background-image: url('https://images.unsplash.com/photo-1526648856597-c2b6745ad7bd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0Y2glMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D.jpg'); 
+    /* background-image: url('https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/c_pad,f_auto,dpr_2.0,h_288,q_auto,w_288/xrtj1rjrir3ioj449inw.gif'); */
+}
+
+header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.heading {
+	color:rgb(231, 200, 200);
+    font-size: xx-large;
+    font-weight:bolder;
+	font-family:fantasy;
+	text-shadow: 0px 0px 20px rgb(3, 4, 2);
+}
+
+.title {
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+
+.container {
+	background-image: url('https://i.pinimg.com/originals/6e/4e/2b/6e4e2b085e879f4bdddb7ee141882b42.gif');
+
+	height: 600px;
+	width: 500px;
+	/* background-color: white; */
+	box-shadow: 8px 8px 20px rgb(128, 128, 128);
+	position: relative;
+	overflow: hidden;
+    border-radius: 20px;
+    /* padding-left: 200px; */
+	z-index: 3;
+}
+.btn {
+	height: 60px;
+	width: 300px;
+	margin: 20px auto;
+	box-shadow: 10px 10px 30px rgb(254, 215, 188);
+	border-radius: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.login,
+.signup {
+	font-size: 22px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	position: relative;
+	cursor: pointer;
+	color: aliceblue;
+
+}
+
+.slider {
+	height: 60px;
+	width: 150px;
+	border-radius: 50px;
+	background-image: linear-gradient(to right,
+			rgb(255, 195, 110),
+			rgb(255, 146, 91));
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	transition: all 0.5s ease-in-out;
+}
+
+.moveslider {
+	left: 250px;
+}
+
+.form-section {
+	height: 500px;
+	width: 1000px;
+	padding: 20px 0;
+	display: flex;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+	left: 0px;
+}
+
+.form-section-move {
+	left: -500px;
+}
+
+.login-box,
+.signup-box {
+	height: 100%;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 40px;
+	color: aliceblue;
+
+}
+
+.login-box {
+	gap: 50px;
+}
+
+.signup-box {
+	gap: 30px;
+}
+
+.ele {
+	height: 60px;
+	width: 400px;
+	outline: none;
+	border: none;
+	color: rgb(77, 77, 77);
+	background-color: rgb(240, 240, 240);
+	border-radius: 50px;
+	padding-left: 30px;
+	font-size: 18px;
+}
+
+.clkbtn {
+	height: 60px;
+	width: 150px;
+	border-radius: 50px;
+	background-image: linear-gradient(to right,
+			rgb(255, 195, 110),
+			rgb(255, 146, 91));
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+	color: aliceblue;
+
+}
