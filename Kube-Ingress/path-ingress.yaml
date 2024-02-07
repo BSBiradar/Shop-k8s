@@ -1,11 +1,9 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: example-ingress
-  annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    kubernetes.io/ingress.class: "nginx"
+  name: biradar-ingress
 spec:
+  ingressClassName: nginx
   rules:
   - host: "biradar.shop/shop"
     http:
