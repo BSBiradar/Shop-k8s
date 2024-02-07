@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shop-deployment
+  labels:
+    app: shop
+spec:
+  template:
+    metadata:
+      labels:
+        app: shop
+    spec:
+      containers:
+        - name: shop-container
+          image: bsbiradar/my-shop-ingress:v1
+          ports:
+            - containerPort: 80
+  replicas: 3
+  selector:
+    matchLabels:
+      app: shop
+  strategy:
+    type: RollingUpdate
