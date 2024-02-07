@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: biradar-ingress
 spec:
+  ingressClassName: nginx
   rules:
   - host: "grocery.biradar.shop"
     http:
