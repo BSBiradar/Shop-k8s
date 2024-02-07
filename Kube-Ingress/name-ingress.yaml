@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: biradar-ingress
 spec:
+  rules:
   - host: "grocery.biradar.shop"
     http:
       paths:
