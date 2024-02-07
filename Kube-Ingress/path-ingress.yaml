@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: "biradar.shop/shop"
+    http:
+      paths:
+      - pathType: Prefix
+        path: /shop
+        backend:
+          service: 
+            name: shop-svc
+            port:
+              number: 80
+  - host: "biradar.shop/watch"
+    http:
+      paths:
+      - pathType: Prefix
+        path: /watch
+        backend:
+          service:
+            name: watch-svc
+            port:
+              number: 80
