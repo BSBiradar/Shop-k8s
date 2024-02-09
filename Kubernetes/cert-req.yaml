@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: CertificateRequest
+metadata:
+  name: debug-tls-secret
+spec:
+  secretName: tls-secret
+  issuerRef:
+    name: letsencrypt-prod
+  commonName: biradar.shop
+  dnsNames:
+    - biradar.shop
+    - grocery.biradar.shop
+    - watch.biradar.shop
