@@ -3,12 +3,14 @@ kind: Ingress
 metadata:
   name: biradar-ingress
   annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
     kubernetes.io/ingress.class: "nginx"
 spec:
   tls:
   - hosts:
-      - <your-host>
+      - biradar.shop
+      - grocery.biradar.shop
+      - watch.biradar.shop
     secretName: tls-secret
   rules:
   - host: "grocery.biradar.shop"
