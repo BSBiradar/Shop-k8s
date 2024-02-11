@@ -2,16 +2,16 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: biradar-ingress
-  #annotations:
-   # cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  annotations:
+   cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   ingressClassName: "nginx"
-  # tls:
-  # - hosts:
-  #     - biradar.shop
-  #     - grocery.biradar.shop
-  #     - watch.biradar.shop
-  #   secretName: tls-secret
+  tls:
+  - hosts:
+      - biradar.shop
+      - grocery.biradar.shop
+      - watch.biradar.shop
+    secretName: tls-secret
   rules:
   - host: "grocery.biradar.shop"
     http:
