@@ -1,4 +1,4 @@
-# Multi-Site Deployment on AWS EKS with Ingress
+﻿# Multi-Site Deployment on AWS EKS with Ingress
 
 This repository contains the code and configurations for deploying multiple websites using Docker, AWS EKS, and Kubernetes with Ingress.
 
@@ -41,3 +41,8 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main
 # Apply the Ingress rule to visit site
 kubectl apply -f name-ingress.yaml
 
+# Check load balancer 
+kubectl get svc -n ingress-nginx
+
+
+## Attach load balancer in Route 53 
