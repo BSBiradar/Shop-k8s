@@ -25,3 +25,8 @@ spec:
             name: watch-svc
             port:
               number: 80
+  tls:
+  - hosts:
+    - "grocery.biradar.shop"
+    - "watch.biradar.shop"
+    secretName: biradar-ingress-tls
