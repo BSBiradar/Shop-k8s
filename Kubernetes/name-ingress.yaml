@@ -30,3 +30,5 @@ spec:
     - "grocery.biradar.shop"
     - "watch.biradar.shop"
     secretName: biradar-ingress-tls
+    tls:
+      certificateARN: arn:aws:acm:ap-south-1:344118038900:certificate/43a644e2-0f2b-40f6-a5ed-9562a66ebd58
