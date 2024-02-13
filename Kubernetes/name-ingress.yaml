@@ -25,4 +25,3 @@ spec:
             name: watch-svc
             port:
               number: 80
-  
