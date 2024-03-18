@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: shop-watch-nodeport-service
+spec:
+  selector:
+    app: shop
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30001  # Choose an available node port number
+  type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: watch-nodeport-service
+spec:
+  selector:
+    app: watch
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30002  # Choose an available node port number
+  type: NodePort
